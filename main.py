@@ -11,12 +11,11 @@ st.set_page_config(page_title="Análise de Mouses")
 pasta_dados = os.path.join(os.getcwd(), "dados") 
 
 #Função para importar as planilha do execel 
-@st.cache_data
 def importar_planilha(nome):
     return pd.read_excel(os.path.join(pasta_dados,nome))
 
 #importando planilha do excel 
-mouses = importar_planilha('dados/mouses.xlsx')
+mouses = importar_planilha('mouses.xlsx')
 
 # Título
 st.title('Análise de Preços de Mouses')
