@@ -16,7 +16,7 @@ def importar_planilha(nome):
     return pd.read_excel(os.path.join(pasta_dados,nome))
 
 #importando planilha do excel 
-mouses = importar_planilha('mouses.xlsx')
+mouses = importar_planilha('dados/mouses.xlsx')
 
 # Título
 st.title('Análise de Preços de Mouses')
