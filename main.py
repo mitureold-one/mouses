@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker 
 import numpy as np
 import os
+# PRIMEIRO COMANDO do Streamlit
+st.set_page_config(page_title="Análise de Mouses")
+
 #criando um caminho flexivel para os arquivos serem carregados no programa(importante para compartilhar o codigo)
 pasta_dados = os.path.join(os.getcwd(), "dados") 
 
@@ -14,9 +17,6 @@ def importar_planilha(nome):
 
 #importando planilha do excel 
 mouses = importar_planilha('mouses.xlsx')
-
-# Configuração da página
-st.set_page_config(page_title="Análise de Mouses")
 
 # Título
 st.title('Análise de Preços de Mouses')
