@@ -15,7 +15,6 @@ def importar_planilha(nome):
 #importando planilha do excel 
 mouses = importar_planilha('mouses.xlsx')
 
-st.set_theme("dark")
 # Configuração da página
 st.set_page_config(page_title="Análise de Mouses")
 
